@@ -8,7 +8,7 @@ var request = require("request");
 var forgeSDK = require('forge-apis');
 
 // actually perform the token operation
-var oauth = require('./oauth');
+var oauth = require('./OAuth');
 var currentToken;
 // Endpoint to return a 2-legged access token
 router.get('/api/forge/oauth/token', function (req, res) {
