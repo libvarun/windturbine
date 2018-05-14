@@ -1,0 +1,27 @@
+{
+  "name": "windturbine",
+  "version": "1.0.0",
+  "description": "Vie windturbines with timeline.",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.autodesk.com/t-pativ/windturbine.git"
+  },
+  "keywords": [
+    "windturbine"
+  ],
+  "author": "Augusto, Varun",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.3",
+    "forge-apis": "^0.4.1",
+    "multer": "^1.3.0",
+    "nodemon": "^1.17.4"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Windturbines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+        #map {
+            height: calc(100vh - 35px);
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #forgeViewer{width: 640px;height: 480px;}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="./js/coordinates.js"></script>
+    <script src="./js/timetable.js"></script>
+    <script src="./js/forgeViewer.js"></script>
+    <!-- Autodesk Forge Viewer files -->
+  <link rel="stylesheet" href="https://developer.api.autodesk.com//modelderivative/v2/viewers/style.min.css?v=v3.3.*" type="text/css" />
+  <script src="https://developer.api.autodesk.com//modelderivative/v2/viewers/three.min.js?v=v3.3.*"></script>
+  <script src="https://developer.api.autodesk.com//modelderivative/v2/viewers/viewer3D.min.js?v=v3.3.*"></script>
+  <script src="./js/viewercolorextenstion.js"></script>
+    
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <span id="currentDate"></span>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+    <script src="./js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBV72JOytVAAXlvey3kGB-XCu4S5XUxOs&callback=initMap"></script>
+    <link rel="stylesheet" href="./css/slider.css"/>
+</body>
+
+</html>
